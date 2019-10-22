@@ -1,0 +1,7 @@
+.feedback {
+    @apply text-sm inline-flex px-3 py-2 rounded;
+
+    &--invalid {
+        @apply text-red-800;
+    }
+}

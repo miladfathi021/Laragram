@@ -1,0 +1,23 @@
+.navbar {
+    @apply bg-gray-900 border-b border-gray-300 py-3;
+
+    &__brand {
+        width: 200px;
+
+        & > img {
+            width: 100%;
+        }
+    }
+
+    &__nav {
+        //@apply ml-auto;
+    }
+
+    .nav-item {
+        @apply text-white;
+
+        a {
+            @apply py-2 px-3 text-lg;
+        }
+    }
+}

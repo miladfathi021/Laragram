@@ -1,0 +1,23 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+
+// helpers
+@import "helpers/grid";
+@import "helpers/typography";
+
+// base
+@import "base/global";
+
+
+// components
+@import "components/button";
+@import "components/file-uploader";
+@import "components/feedback";
+@import "components/card";
+@import "components/form";
+@import "components/image";
+@import "components/navbar";

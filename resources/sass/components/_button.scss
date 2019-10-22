@@ -1,0 +1,17 @@
+.btn {
+    @apply px-4 py-2 rounded;
+
+    &:focus {
+        outline: none;
+    }
+
+    &-primary {
+        background-color: #ff0055;
+    }
+
+    &--search {
+        top: 50%;
+        left: 2px;
+        transform: translateY(-50%);
+    }
+}

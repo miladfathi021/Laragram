@@ -1,0 +1,25 @@
+.form-group {
+    @apply mb-4;
+
+    .label {
+        @apply w-full block;
+    }
+
+    .input {
+        @apply block w-full bg-white text-gray-700 p-2 rounded;
+        outline: none;
+        border: 2px solid transparent;
+
+        &:focus {
+            @apply shadow;
+        }
+
+        &--invalid {
+            @apply border border-red-500;
+        }
+    }
+}
+
+.label {
+    @apply text-gray-700 mb-1;
+}
