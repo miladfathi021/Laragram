@@ -123,25 +123,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.DeletePostTest">
-    <configuration name="CreatePostTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\CreatePostTest" file="$PROJECT_DIR$/tests/Feature/CreatePostTest.php" scope="Class" />
+  <component name="RunManager" selected="PHPUnit.phpunit.xml">
+    <configuration name="FollowFeatureTest.a_user_can_accept_another_user_following_request" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\FollowFeatureTest" file="$PROJECT_DIR$/tests/Feature/FollowFeatureTest.php" method="a_user_can_accept_another_user_following_request" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="DeletePostTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\DeletePostTest" file="$PROJECT_DIR$/tests/Feature/DeletePostTest.php" scope="Class" />
+    <configuration name="FollowFeatureTest.after_sending_a_follow_request_the_follower_may_decline_the_request" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\FollowFeatureTest" file="$PROJECT_DIR$/tests/Feature/FollowFeatureTest.php" method="after_sending_a_follow_request_the_follower_may_decline_the_request" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="DeletePostTest.a_user_authenticated_can_delete_his_own_post" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\DeletePostTest" file="$PROJECT_DIR$/tests/Feature/DeletePostTest.php" method="a_user_authenticated_can_delete_his_own_post" scope="Method" />
+    <configuration name="UserTest.it_can_accept_a_request_from_another_user" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\UserTest" file="$PROJECT_DIR$/tests/Unit/UserTest.php" method="it_can_accept_a_request_from_another_user" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="DeletePostTest.guest_can_not_delete_a_post" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\DeletePostTest" file="$PROJECT_DIR$/tests/Feature/DeletePostTest.php" method="guest_can_not_delete_a_post" scope="Method" />
+    <configuration name="UserTest.it_can_check_if_a_user_has_declined" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\UserTest" file="$PROJECT_DIR$/tests/Unit/UserTest.php" method="it_can_check_if_a_user_has_declined" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="UserTest.it_may_has_many_posts" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\UserTest" file="$PROJECT_DIR$/tests/Unit/UserTest.php" method="it_may_has_many_posts" scope="Method" />
+    <configuration name="UserTest.it_can_check_if_a_user_is_following_them" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\UserTest" file="$PROJECT_DIR$/tests/Unit/UserTest.php" method="it_can_check_if_a_user_is_following_them" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -150,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.DeletePostTest" />
-        <item itemvalue="PHPUnit.DeletePostTest.guest_can_not_delete_a_post" />
-        <item itemvalue="PHPUnit.DeletePostTest.a_user_authenticated_can_delete_his_own_post" />
-        <item itemvalue="PHPUnit.UserTest.it_may_has_many_posts" />
-        <item itemvalue="PHPUnit.CreatePostTest" />
+        <item itemvalue="PHPUnit.FollowFeatureTest.a_user_can_accept_another_user_following_request" />
+        <item itemvalue="PHPUnit.UserTest.it_can_accept_a_request_from_another_user" />
+        <item itemvalue="PHPUnit.UserTest.it_can_check_if_a_user_is_following_them" />
+        <item itemvalue="PHPUnit.FollowFeatureTest.after_sending_a_follow_request_the_follower_may_decline_the_request" />
+        <item itemvalue="PHPUnit.UserTest.it_can_check_if_a_user_has_declined" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +169,9 @@
       <option name="presentableId" value="Default" />
       <updated>1571687491950</updated>
       <workItem from="1571687496196" duration="8898000" />
-      <workItem from="1571762053528" duration="2686000" />
+      <workItem from="1571762053528" duration="10761000" />
+      <workItem from="1571812812605" duration="562000" />
+      <workItem from="1571985075741" duration="12262000" />
     </task>
     <servers />
   </component>
