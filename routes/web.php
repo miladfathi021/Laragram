@@ -17,6 +17,12 @@ Route::middleware(['auth'])->group(function () {
     // Followers
     Route::post('/followers/{user}/decline', 'FollowersController@destroy')->name('followers.destroy');
     Route::post('/followers/{user}/accept', 'FollowersController@store')->name('followers.store');
+
+    // Users
+    Route::patch('/users/{user}/username', 'UsernameController@update')->name('username.update');
+
+    // Search
+    Route::get('/users/search', 'SearchController@show')->name('search.show');
 });
 
 Auth::routes();

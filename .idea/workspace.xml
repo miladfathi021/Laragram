@@ -102,6 +102,9 @@
       <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
       <path value="$PROJECT_DIR$/vendor/league/flysystem" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/laravel/scout" />
+      <path value="$PROJECT_DIR$/vendor/algolia/algoliasearch-client-php" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
     </include_path>
   </component>
   <component name="ProjectId" id="1SWlz7OkmOg3AFjWMjcrLBGc2nX" />
@@ -123,25 +126,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.phpunit.xml">
-    <configuration name="FollowFeatureTest.a_user_can_accept_another_user_following_request" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\FollowFeatureTest" file="$PROJECT_DIR$/tests/Feature/FollowFeatureTest.php" method="a_user_can_accept_another_user_following_request" scope="Method" />
+  <component name="RunManager" selected="PHPUnit.SearchTest.a_user_can_search_for_other_users_by_their_username_name_or_email">
+    <configuration name="ManageUserTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ManageUserTest" file="$PROJECT_DIR$/tests/Feature/ManageUserTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="FollowFeatureTest.after_sending_a_follow_request_the_follower_may_decline_the_request" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\FollowFeatureTest" file="$PROJECT_DIR$/tests/Feature/FollowFeatureTest.php" method="after_sending_a_follow_request_the_follower_may_decline_the_request" scope="Method" />
+    <configuration name="ManageUserTest.username_can_get_updated_to_current_username_for_a_user" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ManageUserTest" file="$PROJECT_DIR$/tests/Feature/ManageUserTest.php" method="username_can_get_updated_to_current_username_for_a_user" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="UserTest.it_can_accept_a_request_from_another_user" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\UserTest" file="$PROJECT_DIR$/tests/Unit/UserTest.php" method="it_can_accept_a_request_from_another_user" scope="Method" />
+    <configuration name="ManageUserTest.username_is_required_for_update" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ManageUserTest" file="$PROJECT_DIR$/tests/Feature/ManageUserTest.php" method="username_is_required_for_update" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="UserTest.it_can_check_if_a_user_has_declined" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\UserTest" file="$PROJECT_DIR$/tests/Unit/UserTest.php" method="it_can_check_if_a_user_has_declined" scope="Method" />
+    <configuration name="ManageUserTest.username_should_be_unique" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ManageUserTest" file="$PROJECT_DIR$/tests/Feature/ManageUserTest.php" method="username_should_be_unique" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="UserTest.it_can_check_if_a_user_is_following_them" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\UserTest" file="$PROJECT_DIR$/tests/Unit/UserTest.php" method="it_can_check_if_a_user_is_following_them" scope="Method" />
+    <configuration name="SearchTest.a_user_can_search_for_other_users_by_their_username_name_or_email" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\SearchTest" file="$PROJECT_DIR$/tests/Feature/SearchTest.php" method="a_user_can_search_for_other_users_by_their_username_name_or_email" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -150,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.FollowFeatureTest.a_user_can_accept_another_user_following_request" />
-        <item itemvalue="PHPUnit.UserTest.it_can_accept_a_request_from_another_user" />
-        <item itemvalue="PHPUnit.UserTest.it_can_check_if_a_user_is_following_them" />
-        <item itemvalue="PHPUnit.FollowFeatureTest.after_sending_a_follow_request_the_follower_may_decline_the_request" />
-        <item itemvalue="PHPUnit.UserTest.it_can_check_if_a_user_has_declined" />
+        <item itemvalue="PHPUnit.SearchTest.a_user_can_search_for_other_users_by_their_username_name_or_email" />
+        <item itemvalue="PHPUnit.ManageUserTest" />
+        <item itemvalue="PHPUnit.ManageUserTest.username_can_get_updated_to_current_username_for_a_user" />
+        <item itemvalue="PHPUnit.ManageUserTest.username_should_be_unique" />
+        <item itemvalue="PHPUnit.ManageUserTest.username_is_required_for_update" />
       </list>
     </recent_temporary>
   </component>
@@ -172,6 +175,10 @@
       <workItem from="1571762053528" duration="10761000" />
       <workItem from="1571812812605" duration="562000" />
       <workItem from="1571985075741" duration="12262000" />
+      <workItem from="1572124525203" duration="690000" />
+      <workItem from="1572291848000" duration="5161000" />
+      <workItem from="1572419241535" duration="3230000" />
+      <workItem from="1572460044809" duration="855000" />
     </task>
     <servers />
   </component>
