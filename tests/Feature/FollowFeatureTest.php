@@ -81,4 +81,23 @@ class FollowFeatureTest extends TestCase
             'status' => FollowingStatusManager::STATUS_ACCEPTED
         ]);
     }
+
+    /** @test **/
+    public function a_user_can_cancel_his_follow_request()
+    {
+        $this->withoutExceptionHandling();
+
+        $john = $this->signIn();
+        $david = factory(User::class)->create();
+
+        $john->follow($david);
+
+        $this->post('/followings/' . $david->id . '/cancel');
+
+        $this->assertDatabaseMissing('followings', [
+            'follower' => $david->id,
+            'following' => $john->id,
+            'status' => FollowingStatusManager::STATUS_SUSPENDED
+        ]);
+    }
 }

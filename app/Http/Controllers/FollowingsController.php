@@ -10,5 +10,14 @@ class FollowingsController extends Controller
     public function store(User $user)
     {
         auth()->user()->follow($user);
+
+        return back();
+    }
+
+    public function destroy(User $user)
+    {
+        auth()->user()->followings()->detach($user->id);
+
+        return back();
     }
 }

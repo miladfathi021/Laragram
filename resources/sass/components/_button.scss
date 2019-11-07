@@ -1,17 +1,11 @@
-.btn {
-    @apply px-4 py-2 rounded;
+.button-primary {
+    @apply bg-indigo-600 text-white px-24 py-3 rounded-b-full rounded-tl-full shadow-lg;
 
     &:focus {
         outline: none;
     }
 
-    &-primary {
-        background-color: #ff0055;
-    }
-
-    &--search {
-        top: 50%;
-        left: 2px;
-        transform: translateY(-50%);
+    &:hover {
+        @apply shadow-md;
     }
 }

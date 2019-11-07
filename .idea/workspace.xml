@@ -14,6 +14,13 @@
       <executable />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
@@ -126,21 +133,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.SearchTest.a_user_can_search_for_other_users_by_their_username_name_or_email">
+  <component name="RunManager" selected="PHPUnit.FollowFeatureTest.a_user_can_cancel_his_follow_request">
+    <configuration name="DashboardTest.a_authenticated_user_can_have_a_panel" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\DashboardTest" file="$PROJECT_DIR$/tests/Feature/DashboardTest.php" method="a_authenticated_user_can_have_a_panel" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="FollowFeatureTest.a_user_can_cancel_his_follow_request" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\FollowFeatureTest" file="$PROJECT_DIR$/tests/Feature/FollowFeatureTest.php" method="a_user_can_cancel_his_follow_request" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="ManageUserTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\ManageUserTest" file="$PROJECT_DIR$/tests/Feature/ManageUserTest.php" scope="Class" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ManageUserTest.username_can_get_updated_to_current_username_for_a_user" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\ManageUserTest" file="$PROJECT_DIR$/tests/Feature/ManageUserTest.php" method="username_can_get_updated_to_current_username_for_a_user" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ManageUserTest.username_is_required_for_update" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\ManageUserTest" file="$PROJECT_DIR$/tests/Feature/ManageUserTest.php" method="username_is_required_for_update" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ManageUserTest.username_should_be_unique" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\ManageUserTest" file="$PROJECT_DIR$/tests/Feature/ManageUserTest.php" method="username_should_be_unique" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="SearchTest.a_user_can_search_for_other_users_by_their_username_name_or_email" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -151,13 +154,17 @@
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <configuration name="tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/tests" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.FollowFeatureTest.a_user_can_cancel_his_follow_request" />
+        <item itemvalue="PHPUnit.DashboardTest.a_authenticated_user_can_have_a_panel" />
         <item itemvalue="PHPUnit.SearchTest.a_user_can_search_for_other_users_by_their_username_name_or_email" />
+        <item itemvalue="PHPUnit.tests" />
         <item itemvalue="PHPUnit.ManageUserTest" />
-        <item itemvalue="PHPUnit.ManageUserTest.username_can_get_updated_to_current_username_for_a_user" />
-        <item itemvalue="PHPUnit.ManageUserTest.username_should_be_unique" />
-        <item itemvalue="PHPUnit.ManageUserTest.username_is_required_for_update" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +185,13 @@
       <workItem from="1572124525203" duration="690000" />
       <workItem from="1572291848000" duration="5161000" />
       <workItem from="1572419241535" duration="3230000" />
-      <workItem from="1572460044809" duration="855000" />
+      <workItem from="1572460044809" duration="1194000" />
+      <workItem from="1572707988224" duration="868000" />
+      <workItem from="1572935671293" duration="2439000" />
+      <workItem from="1572980640225" duration="4153000" />
+      <workItem from="1573021577686" duration="3684000" />
+      <workItem from="1573106636335" duration="2393000" />
+      <workItem from="1573148033547" duration="296000" />
     </task>
     <servers />
   </component>

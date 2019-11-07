@@ -11,6 +11,12 @@ class SearchController extends Controller
     {
         $search = request('q');
 
-        return User::search($search)->get();
+        $users = User::search($search)->paginate(25);
+
+        if (\request()->wantsJson()) {
+            return $users;
+        }
+
+        return view('users.index', compact('users'));
     }
 }

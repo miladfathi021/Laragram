@@ -13,15 +13,15 @@ Route::middleware(['auth'])->group(function () {
 
     // Followings
     Route::post('/followings/{user}', 'FollowingsController@store')->name('followings.store');
+    Route::post('/followings/{user}/cancel', 'FollowingsController@destroy')->name('followings.destroy');
 
     // Followers
     Route::post('/followers/{user}/decline', 'FollowersController@destroy')->name('followers.destroy');
     Route::post('/followers/{user}/accept', 'FollowersController@store')->name('followers.store');
 
     // Users
+    Route::get('/users/{user}', 'PanelsController@show')->name('panels.show');
     Route::patch('/users/{user}/username', 'UsernameController@update')->name('username.update');
-
-    // Search
     Route::get('/users/search', 'SearchController@show')->name('search.show');
 });
 

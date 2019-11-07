@@ -16,16 +16,24 @@ class SearchTest extends TestCase
     {
         $this->withoutExceptionHandling();
 
+        config(['scout.driver' => 'algolia']);
+
         $this->signIn();
 
-        $search= 'john';
+        $search= 'foobar';
         create(User::class, ['name' => 'Test', 'email' => 'test@gmail.com', 'username' => 'testuser']);
-        create(User::class, ['name' => 'Mr. john']);
-        create(User::class, ['email' => 'johndoe@gmail.com']);
-        factory(User::class)->state('username')->create(['username' => 'retryJohn']);
+        create(User::class, ['name' => 'Mr. foobar']);
+        create(User::class, ['email' => 'foobar@gmail.com']);
+        factory(User::class)->state('username')->create(['username' => 'foobar_24']);
 
-        $result = $this->getJson("/users/search?q=$search")->json();
+        do {
+            sleep(.25);
+
+            $result = $this->getJson("/users/search?q=$search")->json()['data'];
+        } while (count($result) !== 3);
 
         $this->assertCount(3, $result);
+
+        User::latest()->take(3)->unsearchable();
     }
 }

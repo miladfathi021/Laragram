@@ -11,38 +11,43 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/all.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/fontawesome.min.css') }}" rel="stylesheet">
 </head>
 <body>
 <div id="app">
-    <nav class="navbar">
+    <nav class="bg-white py-4 border-b border-gray-400">
         <div class="container">
             <div class="flex items-center justify-between">
-                <a class="navbar__brand w-1/4" href="{{ url('/') }}">
-                    <img src="{{ asset('images/logo.svg') }}" alt="laragram">
+                <a class="block w-48" href="{{ url('/') }}">
+                    <img class="w-full" src="{{ asset('images/logo.svg') }}" alt="laragram">
                 </a>
-                @if(auth()->user())
-                    <div class="w-2/4">
-                        <form action="" class="relative w-full">
-                            <div class="form-group" style="margin-bottom: 0;">
-                                <input type="text" class="input" name="search" placeholder="Search">
-                            </div>
-                            <div class="form-group absolute" style="top: 50%; right: 8px; transform: translateY(-50%);">
-                                <button>
-                                    <i class="fas fa-search text-gray-800 bg-white text-2xl pl-2"></i>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                @endif
-            <!-- Right Side Of Navbar -->
-                <ul class="navbar__nav flex justify-end">
+
+                <div class="w-1/3">
+                    <form action="/users/search" method="GET">
+                        <div class="flex relative justify-center items-center">
+{{--                            <input class="bg-gray-200 pl-12 pr-4 py-2 rounded w-full border focus:outline-none focus:border-indigo-500"--}}
+{{--                                   placeholder="Know anyone...?"--}}
+{{--                                   type="text"--}}
+{{--                                   name="q">--}}
+                            <algolia-search token="{{ config('scout.algolia.key') }}" identification="{{ config('scout.algolia.id') }}"></algolia-search>
+                            <span class="absolute left-0 ml-4 text-gray-500">
+                                    <svg class="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0
+                                     24 24"
+                                         width="24"
+                                         height="24"><path class="heroicon-ui" d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/></svg>
+                                </span>
+                        </div>
+
+                    </form>
+                </div>
+
+                <!-- Right Side Of Navbar -->
+                <ul class="flex">
                     <!-- Authentication Links -->
                     @guest
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                         </li>
+
                         @if (Route::has('register'))
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
@@ -50,20 +55,20 @@
                         @endif
                     @else
                         <li class="nav-item flex">
-                            <a id="navbarDropdown" class="mr-3" href="#" role="button" data-toggle="dropdown"
+                            <a id="navbarDropdown" class="mr-8 text-indigo-500" href="#" role="button"
+                               data-toggle="dropdown"
                                aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
 
-                            <div class="flex items-center" aria-labelledby="navbarDropdown">
+                            <div class="text-indigo-500" aria-labelledby="navbarDropdown">
                                 <a href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}
                                 </a>
 
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                                      style="display: none;">
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     @csrf
                                 </form>
                             </div>
@@ -74,21 +79,7 @@
         </div>
     </nav>
 
-    @if (auth()->user())
-        <div class="w-full bg-gray-200">
-            <div class="container">
-                <div class="h-16 flex justify-around items-center">
-                    <p><a class="px-2 py-4" href="#">Follow Requests <span class="text-white bg-red-600 text-sm w-auto h-auto px-2 py-1 inline-block text-center rounded-full">2</span></a></p>
-                    <p><a class="px-2 py-4" href="#">Followers <span class="text-white bg-gray-500 text-sm w-auto h-auto px-2 py-1 inline-block text-center rounded-full">12225</span></a></p>
-                    <p><a class="px-2 py-4" href="#">Following <span class="text-white bg-gray-500 text-sm w-auto h-auto px-2 py-1 inline-block text-center rounded-full">32</span></a></p>
-                    <p><a class="px-2 py-4" href="#">Explore</a></p>
-                    <p><a class="px-2 py-4" href="#">Notifications <span class="text-white bg-red-600 text-sm w-auto h-auto px-2 py-1 inline-block text-center rounded-full">16</span></a></p>
-                </div>
-            </div>
-        </div>
-    @endif
-
-    <main class="py-2">
+    <main>
         @yield('content')
     </main>
 </div>
