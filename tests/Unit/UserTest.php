@@ -152,4 +152,20 @@ class UserTest extends TestCase
 
         $this->assertTrue($david->isFollowing($john));
     }
+
+    /** @test **/
+    public function a_user_can_add_avatar()
+    {
+        $this->withoutExceptionHandling();
+
+        $john = create(User::class, ['name' => 'john']);
+
+        $filename = 'avatar.test';
+
+        $john->addAvatar($filename);
+
+        $this->assertDatabaseHas('users', [
+            'avatar' => 'avatars/' . $filename
+        ]);
+    }
 }

@@ -25,6 +25,8 @@ Vue.use(InstantSearch);
 
 Vue.component('post-page', require('./pages/PostPage.vue').default);
 Vue.component('algolia-search', require('./components/AlgoliaSearch.vue').default);
+Vue.component('avatar', require('./components/Avatar.vue').default);
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

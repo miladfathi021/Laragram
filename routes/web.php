@@ -20,9 +20,13 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/followers/{user}/accept', 'FollowersController@store')->name('followers.store');
 
     // Users
+    Route::get('/users/search', 'SearchController@show')->name('search.show');
     Route::get('/users/{user}', 'PanelsController@show')->name('panels.show');
     Route::patch('/users/{user}/username', 'UsernameController@update')->name('username.update');
-    Route::get('/users/search', 'SearchController@show')->name('search.show');
+    Route::post('/users/{user}/avatars', 'AvatarsController@store')->name('avatars.store');
+
+    // Settings
+    Route::get('/settings/users/{user}', 'SettingsController@show')->name('settings.show');
 });
 
 Auth::routes();

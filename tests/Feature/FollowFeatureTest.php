@@ -100,4 +100,12 @@ class FollowFeatureTest extends TestCase
             'status' => FollowingStatusManager::STATUS_SUSPENDED
         ]);
     }
+
+    /** @test **/
+    public function a_users_can_not_follow_themselves()
+    {
+        $john = $this->signIn();
+
+        $this->post('/followings/' . $john->id)->assertRedirect($john->path());
+    }
 }
