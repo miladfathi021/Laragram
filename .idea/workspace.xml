@@ -133,38 +133,38 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.FollowFeatureTest">
-    <configuration name="AvatarTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\AvatarTest" file="$PROJECT_DIR$/tests/Feature/AvatarTest.php" scope="Class" />
+  <component name="RunManager" selected="PHPUnit.tests">
+    <configuration name="ManageUserTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ManageUserTest" file="$PROJECT_DIR$/tests/Feature/ManageUserTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="AvatarTest.a_user_can_upload_an_avatar" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\AvatarTest" file="$PROJECT_DIR$/tests/Feature/AvatarTest.php" method="a_user_can_upload_an_avatar" scope="Method" />
+    <configuration name="ManageUserTest.a_username_can_only_contains_meaningful_words_and_numbers_and_underline" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ManageUserTest" file="$PROJECT_DIR$/tests/Feature/ManageUserTest.php" method="a_username_can_only_contains_meaningful_words_and_numbers_and_underline" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="AvatarTest.avatar_is_required" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\AvatarTest" file="$PROJECT_DIR$/tests/Feature/AvatarTest.php" method="avatar_is_required" scope="Method" />
+    <configuration name="ManageUserTest.username_can_get_updated_to_current_username_for_a_user" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ManageUserTest" file="$PROJECT_DIR$/tests/Feature/ManageUserTest.php" method="username_can_get_updated_to_current_username_for_a_user" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="FollowFeatureTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\FollowFeatureTest" file="$PROJECT_DIR$/tests/Feature/FollowFeatureTest.php" scope="Class" />
-      <method v="2" />
-    </configuration>
-    <configuration name="FollowFeatureTest.a_users_can_not_follow_themselves" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\FollowFeatureTest" file="$PROJECT_DIR$/tests/Feature/FollowFeatureTest.php" method="a_users_can_not_follow_themselves" scope="Method" />
+    <configuration name="ManageUserTest.users_can_update_their_username" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ManageUserTest" file="$PROJECT_DIR$/tests/Feature/ManageUserTest.php" method="users_can_update_their_username" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <configuration name="tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/tests" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.FollowFeatureTest" />
-        <item itemvalue="PHPUnit.FollowFeatureTest.a_users_can_not_follow_themselves" />
-        <item itemvalue="PHPUnit.AvatarTest.a_user_can_upload_an_avatar" />
-        <item itemvalue="PHPUnit.AvatarTest" />
-        <item itemvalue="PHPUnit.AvatarTest.avatar_is_required" />
+        <item itemvalue="PHPUnit.tests" />
+        <item itemvalue="PHPUnit.ManageUserTest" />
+        <item itemvalue="PHPUnit.ManageUserTest.username_can_get_updated_to_current_username_for_a_user" />
+        <item itemvalue="PHPUnit.ManageUserTest.users_can_update_their_username" />
+        <item itemvalue="PHPUnit.ManageUserTest.a_username_can_only_contains_meaningful_words_and_numbers_and_underline" />
       </list>
     </recent_temporary>
   </component>
@@ -195,6 +195,8 @@
       <workItem from="1573193149799" duration="70000" />
       <workItem from="1573371503030" duration="2739000" />
       <workItem from="1573539447689" duration="6697000" />
+      <workItem from="1573632321423" duration="752000" />
+      <workItem from="1573800359118" duration="1636000" />
     </task>
     <servers />
   </component>

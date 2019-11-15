@@ -61,7 +61,7 @@ class User extends Authenticatable
     function generateUsername($user)
     {
         $username = bcrypt($user->name) . time();
-        $username = preg_replace('/[.\/]/', str_shuffle('abcd'), $username);
+        $username = preg_replace('/[.\/\\$]/', str_shuffle('ab_cd'), $username);
         return $username;
     }
 

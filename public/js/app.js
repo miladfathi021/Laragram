@@ -9875,7 +9875,7 @@ __webpack_require__.r(__webpack_exports__);
       formData.append('avatar', e.target.files[0]);
       axios.post('/users/' + this.user.id + '/avatars', formData).then(function (res) {
         if (res.data.status == 201) {
-          _this.person.avatar = res.data.data.avatar;
+          _this.person.avatar = res.data.user.avatar;
         }
       });
     }

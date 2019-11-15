@@ -82,12 +82,27 @@ class ManageUserTest extends TestCase
     /** @test **/
     public function username_can_get_updated_to_current_username_for_a_user()
     {
-        $this->signIn();
-
-        $john = create(User::class);
+        $john = $this->signIn();
 
         $this->patch('/users/' . $john->id . '/username', [
             'username' =>  $john->username
         ])->assertSessionDoesntHaveErrors(['username']);
     }
+
+    /** @test **/
+    public function a_username_can_only_contains_meaningful_words_and_numbers_and_underline()
+    {
+        $john = $this->signIn();
+
+        $this->patch($john->path() . '/username', [
+            'username' => 'hello.'
+        ])->assertSessionHasErrors(['username']);
+    }
+    //TODO
+    // Update password needs an email confirmation.
+//    /** @test **/
+//    public function users_can_update_their_password()
+//    {
+//       $john = create(User::class);
+//    }
 }
